@@ -49,6 +49,9 @@ class ServerComponent extends CApplicationComponent
      */
     public $enableClientCredentials = false;
 
+    public $enableJwtBearer = false;
+
+
     /**
      * @var string name of CDbConnection app component. Default is 'db'.
      */
