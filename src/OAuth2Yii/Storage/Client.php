@@ -78,4 +78,26 @@ class Client extends DbStorage implements ClientInterface, ClientCredentialsInte
 
         return md5($client_secret) === $hash;
     }
+
+    /**
+     * Required by OAuth2\Storage\ClientInterface
+     *
+     * @param string $client_id
+     */
+    public function getClientScope($client_id) {
+      // TODO: yalis: implementar de verdad
+      return '';
+    }
+
+    /**
+     * Required by OAuth2\Storage\ClientCredentialsInterfaces
+     *
+     * @param string $client_id
+     * @param string $client_secret
+     */
+    public function isClientPublic($client_id, $client_secret = null) {
+      // TODO: yalis: implementar de verdad
+      return true;
+    }
+
 }
