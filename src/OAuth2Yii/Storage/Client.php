@@ -95,7 +95,7 @@ class Client extends DbStorage implements ClientInterface, ClientCredentialsInte
      * @param string $client_id
      * @param string $client_secret
      */
-    public function isClientPublic($client_id, $client_secret = null) {
+    public function isPublicClient($client_id, $client_secret = null) {
       // TODO: yalis: implementar de verdad
       return true;
     }
